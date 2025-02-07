@@ -9,8 +9,8 @@ on:
 
 env:
   SLACK_USERNAME: notify_Slack_on_PR_Merge
-  SLACK_ICON: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  SLACK_WEBHOOK: https://hooks.slack.com/services/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
+  SLACK_ICON: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+  SLACK_WEBHOOK: "https://hooks.slack.com/services/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"
 
 jobs:
   slackNotification:
@@ -30,7 +30,7 @@ jobs:
       env:
         SLACK_TITLE: update / Success
         SLACK_COLOR: good
-        SLACK_MESSAGE: 対象ファイルが更新されました。🚀 詳細は https://github.com/hirokazu1209/notify_Slack_on_PR_Merge にて差分の確認をお願いします。
+        SLACK_MESSAGE: 対象ファイルが更新されました。🚀 詳細は "https://github.com/hirokazu1209/notify_Slack_on_PR_Merge" にて差分の確認をお願いします。
 
     # 失敗
     - name: Slack Notification on Failure
