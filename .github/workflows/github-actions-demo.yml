@@ -10,7 +10,7 @@ on:
 env:
   SLACK_USERNAME: notify_Slack_on_PR_Merge
   SLACK_ICON: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
 jobs:
   slackNotification:
