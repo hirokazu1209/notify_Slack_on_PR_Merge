@@ -28,7 +28,7 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       if: ${{ success() }}
       env:
-        SLACK_TITLE: Deploy / Success
+        SLACK_TITLE: 文言一覧ファイルの更新通知
         SLACK_COLOR: good
         SLACK_MESSAGE: 対象ファイルが更新されました。🚀 詳細は "https://github.com/hirokazu1209/notify_Slack_on_PR_Merge" にて差分の確認をお願いします。
 
